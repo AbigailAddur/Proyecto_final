@@ -1,0 +1,62 @@
+
+
+body {
+    background-color: rgba(15, 15, 17, 0.5) ;
+    margin: 20px;
+}
+
+
+a {
+    text-decoration: none ;
+    color: bisque;
+    font-size: 1rem;
+
+}
+
+a:hover {
+    color: orangered;
+}
+
+ HEADER 
+header{
+    position: centre;
+    padding: 0 2rem;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.navbar.links {
+    display: flex;
+    /*gap: 5rem;
+    margin: 2px;*/
+
+ }
+/* 2 columnas */
+#contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #principal {
+    width: 65%;
+  }
+  #texto {
+    width: 35%;
+    color: bisque;
+    text-align: center;
+        
+  }
+
+
+footer {
+    color: bisque;
+    text-align: center;
+
+}
