@@ -60,3 +60,13 @@ footer {
     text-align: center;
 
 }
+
+.servicios {
+    display: flex;
+    justify-content: center;
+    
+}
+.foto {
+    margin-left: 20px;
+    justify-content: center;
+}
