@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,71 +8,91 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="favicon/logo.ico" type="image/x-icon">
     <title>Fotografía</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
-<body> 
+<body>
     <header>
         <nav class="navbar">
-            
+
             <ul class="links">
                 <div class="logo"> <img src="MP.png" alt="logo" width="100px"></div>
-                <li> 
-                <a href="index.html">Inicio</a>
+                <li>
+                    <a href="index.html">Inicio</a>
                 </li>
-                <li> 
-                <a href="nosotros.html">Nosotros</a>
+                <li>
+                    <a href="Sobre mi.html">Sobre mi</a>
                 </li>
-                <li> 
-                <a href="servicios.html">Servicios</a>
+                <li>
+                    <a href="servicios.html">Servicios</a>
                 </li>
-                <li> 
-                <a href="contacto.html">Contacto</a>
-               </li>
-               <li> 
-             
-             </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+                <li>
+
+                </li>
             </ul>
-        </div>
-        
-        </div>
-        </div>
+            </div>
+
+            </div>
+            </div>
     </header>
     <div>
-        <h2>CONTACTO</h2>
+        <h2 id="contactanos">¡Contactanos!</h2>
         <div>
             <form id="contactForm">
                 <p>
-                <label for="nombre">Nombre</label>
-                <input type="text" name="lname" class="form-control" id="lname" placeholder="Nombre y Apellido" data-rule="minlen:4" data-msg="Por favor escriba su nombre completo" />
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="lname" class="form-control" id="lname" placeholder="Nombre y Apellido"
+                        data-rule="minlen:4" data-msg="Por favor escriba su nombre completo" />
                 </p>
                 <p>
-                <label for="email">Correo electrónico:</label>
-                <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Por favor escriba un email válido" />
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email"
+                        data-rule="email" data-msg="Por favor escriba un email válido" />
                 </p>
                 <p>
-                <label for="Celular">Celular</label>
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Celular" data-rule="minlen:4" data-msg="Escriba más de 8 caracteres" />
+                    <label for="Celular">Celular</label>
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Celular"
+                        data-rule="minlen:4" data-msg="Escriba más de 8 caracteres" />
                 </p>
                 <p>
-                <label for="mensaje">Mensaje:</label>
-                <textarea name="message" id="message" cols="50" rows="7" class="form-control" placeholder="Mensaje (Por favor incluya fecha, horario, lugar, cantidad de invitados y servicios requeridos)."></textarea>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="message" id="message" cols="50" rows="7" class="form-control"
+                        placeholder="Mensaje (Por favor incluya fecha, horario, lugar, cantidad de invitados y servicios requeridos)."></textarea>
                 </p>
+                <div id="enviar">
                 <input type="submit" value="ENVIAR" class="btn btn-primary py-2 px-4 text-white">
+                </div>
             </form>
             <div id="mensajeExito"></div>
-            </div>
- 
-    <footer>
-        <div class="footer">
-            <div class="container-fluid text-centre">
-                <i class='bx bxl-whatsapp bx-md' style='color:#09bf1b' ></i>
-                <i class='bx bxl-instagram bx-md' style='color:#e807b4'  ></i>
-                <p> MP Fotógrafos / Fotografía - Video -
-                    <br>
-                    +54 9 381.467.9087 . San Martin 3678 . San Miguel (B1646GKJ) . Tucuman . Argentina </p>
-                </div>
         </div>
-     </footer>   
+
+        
+        <div id="ubicación">
+            <h3>Encontranos en San Miguel de Tucumán </h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.64035826885!2d-65.25385792608567!3d-26.819577776702758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225ceff0c873f7%3A0xef022163435e3b04!2sGral.%20Jos%C3%A9%20de%20San%20Mart%C3%ADn%203678%2C%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1698411189975!5m2!1ses!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+        <footer>
+            <div class="footer">
+                <div class="container-fluid text-centre">
+                    <i class='bx bxl-whatsapp bx-md' style='color:#09bf1b'></i>
+                    <i class='bx bxl-instagram bx-md' style='color:#e807b4'></i>
+                    <p> MP Fotógrafos / Fotografía - Video -
+                        <br>
+                        +54 9 381.467.9087 . San Martin 3678 . San Miguel (B1646GKJ) . Tucuman . Argentina
+                    </p>
+                </div>
+            </div>
+        </footer>
 </body>
 
 </html>
