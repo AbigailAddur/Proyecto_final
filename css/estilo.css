@@ -63,25 +63,49 @@ HEADER
   .toggle_btn {
    position: fixed;
   }
+
+ 
 /* 2 columnas */
 #contenedor {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
-  #principal {
-    width: 65%;
+  #imagen {
+   width: 65%;
+   margin: auto;
+    
   }
   #texto {
     width: 35%;
-    color: bisque;
+    color: rgb(8, 8, 8);
     text-align: center;
         
+  } 
+
+  h2{
+    text-align: center;
   }
   #contactForm {
-    width: 300px; 
-    margin: 0 auto; 
-    text-align: left; 
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: inline-block;
+   
+}
+
+.form-control {
+  width: 50%; 
+  height:auto;
+} 
+
+form label {
+  width: 300px; 
+  display: inline-block;
+  text-align: right;
+  margin-right: 20px; 
 }
 
 #mensaje {
@@ -91,7 +115,7 @@ HEADER
 
 footer {
     margin-top: 40px;
-    color: bisque;
+    color: rgb(11, 11, 11);
     text-align: center;
 
 }
@@ -241,3 +265,17 @@ INDEX
        #slider-span6:target ~.image-slider{
         left:-30%;
          }
+
+
+/*.form-control {
+          height: 43px;
+          border-radius: 0;
+          background: transparent;
+          border-color: #777;
+          color: #fff !important; }
+          .form-control:active, .form-control:focus {
+            border-color: #8dc3d3;
+            background: transparent; }
+          .form-control:hover, .form-control:active, .form-control:focus {
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important; }

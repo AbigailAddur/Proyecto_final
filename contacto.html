@@ -28,10 +28,7 @@
                 <a href="contacto.html">Contacto</a>
                </li>
                <li> 
-                <a href="#" class="action_btn">Busqueda</a>
-              <!--  <div class="toggle_btn">
-             <i class="fa-solid fa-bars"></i>
-         </div>-->
+             
              </li>
             </ul>
         </div>
@@ -44,23 +41,25 @@
         <div>
             <form id="contactForm">
                 <p>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="lname" class="form-control" id="lname" placeholder="Nombre y Apellido" data-rule="minlen:4" data-msg="Por favor escriba su nombre completo" />
                 </p>
                 <p>
                 <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Por favor escriba un email válido" />
+                </p>
+                <p>
+                <label for="Celular">Celular</label>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Celular" data-rule="minlen:4" data-msg="Escriba más de 8 caracteres" />
                 </p>
                 <p>
                 <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
+                <textarea name="message" id="message" cols="50" rows="7" class="form-control" placeholder="Mensaje (Por favor incluya fecha, horario, lugar, cantidad de invitados y servicios requeridos)."></textarea>
                 </p>
-                <button type="submit">Enviar</button>
+                <input type="submit" value="ENVIAR" class="btn btn-primary py-2 px-4 text-white">
             </form>
             <div id="mensajeExito"></div>
             </div>
-            
-    </div>
  
     <footer>
         <div class="footer">
