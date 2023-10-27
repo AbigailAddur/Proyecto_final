@@ -75,11 +75,18 @@ HEADER
   #texto {
     width: 35%;
     color: rgb(8, 8, 8);
-    text-align: center;       
+    text-align: justify;       
   } 
 
   h2{
     text-align: center;
+  }
+
+  h1{
+    text-align: center;
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
   #contactForm {
     position: relative;
@@ -286,19 +293,5 @@ INDEX
   margin-top: 6rem;
 }
 
-
-
-/*.form-control {
-          height: 43px;
-          border-radius: 0;
-          background: transparent;
-          border-color: #777;
-          color: #fff !important; }
-          .form-control:active, .form-control:focus {
-            border-color: #8dc3d3;
-            background: transparent; }
-          .form-control:hover, .form-control:active, .form-control:focus {
-            -webkit-box-shadow: none !important;
-            box-shadow: none !important; }
 
 
