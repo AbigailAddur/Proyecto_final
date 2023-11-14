@@ -132,25 +132,6 @@ footer {
     text-align: center;
 }
 
-/*.servicios {
-    display: flex;
-    justify-content: center; 
-}
-
-.foto {
-    margin-top: 1rem;
-    margin-left: 1.25rem;
-    justify-content: center;
-}
-
-figcaption:hover {
-background-color: rgb(216, 213, 213);
-}
-figcaption{
-    text-align: center;
-}
-
-*/
 
 #servicios {
   text-align: center;
@@ -219,7 +200,7 @@ INDEX
 .image-slider {
   width: 100%;
   height: 37.5rem;
-  /*position: absolute;*/
+  position: relative;
   left: 0;
   display: flex;
   justify-content: center;
@@ -338,6 +319,4 @@ INDEX
   align-items: center;
   margin-top: 6rem;
 }
-
-
 
