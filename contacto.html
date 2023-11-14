@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<script src="js/script.js"></script>
 </head>
 
 <body>
@@ -43,30 +44,35 @@
     <div>
         <h2 id="contactanos">¡Contactanos!</h2>
         <div>
-            <form id="contactForm">
+    
+            <form id="contactForm" onsubmit="return validar();">
                 <p>
                     <label for="nombre">Nombre</label>
                     <input type="text" name="lname" class="form-control" id="lname" placeholder="Nombre y Apellido"
-                        data-rule="minlen:4" data-msg="Por favor escriba su nombre completo" />
+                        data-rule="minlen:4" data-msg="Por favor escriba su nombre completo" value="" />
+                    <span id="validar_nombre" style="color:red;"></span>
                 </p>
                 <p>
                     <label for="email">Correo electrónico:</label>
                     <input type="email" class="form-control" name="email" id="email" placeholder="Email"
-                        data-rule="email" data-msg="Por favor escriba un email válido" />
+                        data-rule="email" data-msg="Por favor escriba un email válido" value="" />
+                        <span id="validar_email" style="color:red;"></span>
                 </p>
-                <p>
+                <p> 
                     <label for="Celular">Celular</label>
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Celular"
+                    <input type="number" class="form-control" name="subject" id="subject" placeholder="Celular"
                         data-rule="minlen:4" data-msg="Escriba más de 8 caracteres" />
                 </p>
                 <p>
                     <label for="mensaje">Mensaje:</label>
                     <textarea name="message" id="message" cols="50" rows="7" class="form-control"
-                        placeholder="Mensaje (Por favor incluya fecha, horario, lugar, cantidad de invitados y servicios requeridos)."></textarea>
-                </p>
-                <div id="enviar">
-                <input type="submit" value="ENVIAR" class="btn btn-primary py-2 px-4 text-white">
-                </div>
+                        placeholder="Mensaje (Por favor incluya fecha, horario, lugar, cantidad de invitados y servicios requeridos)." value=""></textarea>
+                        <span id="validar_mensaje" style="color:red;"></span></p>
+
+                 <div id="enviar">
+                 <input type="submit" value="ENVIAR" class="btn btn-primary py-2 px-4 text-white">
+                 </div>
+                
             </form>
             <div id="mensajeExito"></div>
         </div>
