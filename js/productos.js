@@ -4,7 +4,7 @@ const { createApp } = Vue
             return {
                 productos:[],
                 //url:'http://127.0.0.1:5000/productos',
-                url:'http://santi0505.pythonanywhere.com/productos',
+                url:'https://santi0505.pythonanywhere.com/productos',
                 error:false,
                 cargando:true,
                 /*atributos para el guardar los valores del formulario */
