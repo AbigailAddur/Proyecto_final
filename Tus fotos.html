@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="favicon/logo.ico" type="image/x-icon">
+    <title>Fotografía</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar">
+
+            <ul class="links">
+                <div class="logo"> <img src="Imágenes/MP.png" alt="logo" width="100px"></div>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="Sobre mi.html">Sobre mi</a>
+                </li>
+                <li>
+                    <a href="servicios.html">Servicios</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+                <li>
+                    <a href="Tus fotos.html">Tus fotos</a>
+                </li>
+                </li>
+            </ul>
+            </div>
+
+            </div>
+            </div>
+        </header>
+
+    <section>
+        
+            <div>
+                <h1 id="inicio">Buscá tus fotos</h1>
+                <div id="app" class="container">
+                    <div v-if="error">
+                        <p>Error al cargar los trabajos, contactarse con la administracion , ........</p>
+                    </div>
+                    <div v-else> 
+                        <div class="container">
+                            <div class="card" v-for="producto in productos" :key="producto.id">
+                                <img src="{{producto.imagen}}" alt="Foto book" width="250" height="250">
+                                <h4>{{producto.nombre}}</h4>
+                                <a href="{{producto.stock}}" rel="link">{{producto.stock}}</a>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/productos.js"></script>
+</body>
+
+</html>
