@@ -57,7 +57,7 @@
                     <div v-else> 
                         <div class="container">
                             <div class="card" v-for="producto in productos" :key="producto.id">
-                                <img src="{{producto.imagen}}" alt="Foto book" width="250" height="250">
+                                <img :src="producto.imagen" :alt="producto.nombre" width="250" height="250">
                                 <h4>{{producto.nombre}}</h4>
                                 <a href="{{producto.stock}}" rel="link">{{producto.stock}}</a>
                             </div>
