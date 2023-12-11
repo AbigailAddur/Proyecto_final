@@ -10,7 +10,7 @@ const { createApp } = Vue
                 imagen:"",
                 stock:0,
                 precio:0,
-                url:'http://santi0505.pythonanywhere.com/productos/'+id,
+                url:'https://santi0505.pythonanywhere.com/productos/'+id,
                 //url:'http://127.0.0.1:5000/productos/'+id,
             }
         },
