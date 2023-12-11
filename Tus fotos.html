@@ -59,7 +59,7 @@
                             <div class="card" v-for="producto in productos" :key="producto.id">
                                 <img :src="producto.imagen" :alt="producto.nombre" width="250" height="250">
                                 <h4>{{producto.nombre}}</h4>
-                                <a href="{{producto.stock}}" rel="link">{{producto.stock}}</a>
+                                <a :href="producto.stock" rel="link">{{producto.stock}}</a>
                             </div>
                     
                         </div>
