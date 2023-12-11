@@ -21,7 +21,7 @@
             <ul class="links">
                 <div class="logo"> <img src="Imágenes/MP.png" alt="logo" width="100px"></div>
                 <li>
-                    <a href="index.html">Portfolio</a>
+                    <a href="index.html">Inicio</a>
                 </li>
                 <li>
                     <a href="Sobre mi.html">Sobre mi</a>
@@ -46,43 +46,26 @@
     <section>
         
             <div>
-            <h1 id="inicio">Buscá tus fotos</h1>
-            <div>
-
-                <div class="container">
-                    <div class="card">
-                        <img src="Imágenes/cumple 15.jpg" alt="Foto boda" width="250" height="250">
-                        <h4>Cumpleaños de 15 Ana</h4>
-                        <a href="#">Descargar</a>
+                <h1 id="inicio">Buscá tus fotos</h1>
+                <div id="app" class="container">
+                    <div v-if="error">
+                        <p>Error al cargar los trabajos, contactarse con la administracion , ........</p>
                     </div>
-                    <div class="card">
-                        <img src="Imágenes/book patricia.jpg" alt="Foto eventos" width="250" height="250">
-                        <h4>Book de fotos Patricia</h4>
-                        <a href="#">Descargar</a>
-                    </div>
-                    <div class="card">
-                        <img src="Imágenes/bautismo foto.jpg" alt="Book fotos" width="250" height="250">
-                        <h4>Bautismo Martin</h4>
-                        <a href="#">Descargar</a>
-                    </div>
-                    <div class="card">
-                        <img src="Imágenes/boda carolina.jpg" alt="Book fotos" width="250" height="250">
-                        <h4>Boda de Carolina y Javier</h4>
-                        <a href="#">Descargar</a>
-                    </div>
-                    <div class="card">
-                        <img src="Imágenes/sesion emilia.jpg" alt="Book fotos" width="250" height="250">
-                        <h4>Sesión infantil Emilia</h4>
-                        <a href="#">Descargar</a>
-                    </div>
-                    <div class="card">
-                        <img src="Imágenes/fiesta recibida.jpg" alt="Book fotos" width="250" height="250">
-                        <h4>Fiesta de recibida Martina</h4>
-                        <a href="#">Descargar</a>
+                    <div v-else> 
+                        <div class="container">
+                            <div class="card" v-for="producto in productos" :key="producto.id">
+                                <img src="{{producto.imagen}}" alt="Foto book" width="250" height="250">
+                                <h4>{{producto.nombre}}</h4>
+                                <a href="{{producto.stock}}" rel="link">{{producto.stock}}</a>
+                            </div>
+                    
+                        </div>
                     </div>
                 </div>
-            </section>
-
+            </div>
+    </section>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/productos.js"></script>
 </body>
 
 </html>
