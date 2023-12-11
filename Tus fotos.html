@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -19,7 +20,6 @@
         <nav class="navbar">
 
             <ul class="links">
-                <div class="logo"> <img src="Imágenes/MP.png" alt="logo" width="100px"></div>
                 <li>
                     <a href="index.html">Inicio</a>
                 </li>
@@ -34,6 +34,9 @@
                 </li>
                 <li>
                     <a href="Tus fotos.html">Tus fotos</a>
+                </li>
+                <li>
+                    <a href="productos.html">Cargar album</a>
                 </li>
                 </li>
             </ul>
@@ -54,15 +57,16 @@
                     <div v-else> 
                         <div class="container">
                             <div class="card" v-for="producto in productos" :key="producto.id">
-                                <img src="{{producto.imagen}}" alt="Foto book" width="250" height="250">
+                                <img :src="producto.imagen" :alt="producto.nombre" width="250" height="250">
                                 <h4>{{producto.nombre}}</h4>
-                                <a href="{{producto.stock}}" rel="link">{{producto.stock}}</a>
+                                <a :href="producto.stock" rel="link">{{producto.stock}}</a>
                             </div>
                     
                         </div>
                     </div>
                 </div>
             </div>
+
     </section>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="./js/productos.js"></script>
